@@ -43,7 +43,7 @@ export default {
       email: '',
       framework: 'vue',
       extras: '',
-      spam: ''
+      spam: false
     }
   }
 }
