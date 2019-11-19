@@ -44,7 +44,7 @@ export default {
         email: '',
         framework: 'vue',
         extras: '',
-        spam: false
+        spam: true
       }
     }
   },
@@ -68,7 +68,10 @@ export default {
   created () {
     const storedForm = this.openStorage()
     if (storedForm) {
-      this.form = storedForm
+      this.form = {
+        ...this.form,
+        ...storedForm
+      }
     }
   }
 }
